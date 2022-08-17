@@ -1,1 +1,95 @@
 /* Your code here */
+.masthead {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 14px 1fr;
+    grid-template-areas: 
+    "menu . buttons"
+    ". tech ."
+    "date logo paper";
+
+    border-bottom: 1px solid lightgray;
+}
+
+.masthead_bars {
+    font-size: 11px;
+    padding: 7px 9px;
+    padding-left: 20px;
+}
+
+.masthead_bars:hover {
+    background-color: #f7f7f5;
+}
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+}
+
+.masthead_button {
+    height: 40px;
+    grid-area: buttons;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.masthead_button:hover {
+    background-color: blue;
+    transition-duration: .3s;
+}
+
+.tech {
+    grid-area: tech;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #6f6f6f;
+    padding: 0px;
+    justify-content: center;
+    align-content: flex-end;
+    display: flex;
+    border-top: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    height: 12px;
+
+
+}
+
+.CSS, .python, .HTML, .javascript {
+    padding: 0px 5px;
+    /* justify-content: center; */
+    /* border-top: 1px solid lightgrey; */
+    
+}
+
+.date {
+    grid-area: date;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    border-top: 1px solid lightgrey;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    text-align: center;
+    border-top: 1px solid lightgrey;
+   
+}
+
+.paper {
+    grid-area: paper;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-top: 1px solid lightgrey;
+}
+
+.paper, .logo, .date {
+    padding-bottom: 11px;
+    padding-top: 11px;
+}
